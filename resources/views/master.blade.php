@@ -28,14 +28,16 @@
 
     <body>
         @include('content.partials.nav')
+        @include('content.partials.messages')
         <div class="container-fluid" id="main-content-wrap">
-           @include('content.partials.messages')
-           @include('content.partials.hero') 
+           
+            
         
         @yield('content')
         
-        </div>
+        
         @include('content.partials.footer')
+        </div><!--main-content-wrap-->
         <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
