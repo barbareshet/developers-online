@@ -4,40 +4,40 @@
  * and open the template in the editor.
  */
 
-/*$('document').ready(function(){
+$('document').ready(function(){
     
     var $animation_elements_left = $('.left');
      var $animation_elements_right = $('.right');
     var $window = $(window);
     $window.scrollTop(function(){
-        if($(this).height() >= 50 ) {
+        if($(this).height() >= 100 ) {
             $animation_elements_left.animate({
            opacity: 0.25,
            left: "-555px"
-       },2000);
+            },2000);
        $animation_elements_right.animate({
            opacity: 0.25,
            right: "-550px"
-       },2000);
-        } else {
+            },2000);
+        } else if ($(this).height() < 100) {
            $animation_elements_left.animate({
            opacity: 1,
            right: "0"
-       },2000);
+            },2000);
        $animation_elements_right.animate({
            opacity: 1,
            left: "0"
-       },2000);   
+            },2000);   
             
         }
        
         
     });
    
-});*/
+});
 
   //FADEOUT EFFECT AT manageIt page
-jQuery('document').ready(function($) {
+/*jQuery('document').ready(function($) {
 
 
   var $window = $(window);
@@ -78,6 +78,6 @@ jQuery('document').ready(function($) {
     
   });
   });
-
+*/
  
 

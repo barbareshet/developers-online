@@ -12,4 +12,35 @@
 */
 
 #Pages:
-Route::get('/', 'PagesController@index');
+Route::get('/', [
+    'uses'  => '\App\Http\Controllers\PagesController@index',
+    'as'    => 'home',
+]);
+
+
+//Messages test route
+//Route::get('/alert', function(){
+//   return redirect()->route('home') ->with('error', 'error');
+//});
+
+//Authentication
+Route::get('/register', [
+    'uses' =>'\App\Http\Controllers\AuthController@getSignup',
+    'as'    => 'auth.register',
+    
+]);
+
+Route::post('/register', [
+    'uses' =>'\App\Http\Controllers\AuthController@postSignup',
+    ]);
+
+
+Route::get('/login', [
+    'uses' =>'\App\Http\Controllers\AuthController@getLogin',
+    'as'    => 'auth.login',
+]);
+
+Route::post('/login', [
+    'uses' =>'\App\Http\Controllers\AuthController@postLogin',
+    
+]);

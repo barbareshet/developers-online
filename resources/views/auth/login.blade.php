@@ -3,7 +3,7 @@
 
 <div class="container" id="login-page">
 
-      <form class="form-signin">
+      <form class="form-signin" role="form" method="post" action="{{ route('auth.login') }}">
         <h2 class="form-signin-heading">Please sign in</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -15,6 +15,7 @@
           </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <input type="hidden" name="_token" value="{{ Session::token() }}">
       </form>
 
     </div> <!-- /container -->
