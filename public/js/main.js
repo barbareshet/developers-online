@@ -33,6 +33,9 @@ $('document').ready(function(){
        
         
     });
+//    $('.btn').hover(function(){
+//       $(this).addClass('glitch');
+//    });
    
 });
 

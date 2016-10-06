@@ -43,6 +43,19 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{asset('assets/bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{asset('assets/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{asset('assets/bower_components/glitmage/glitmage.js') }}"></script>
+    <script>var glitmage = Glitmage(document.getElementById('glitmage'));</script>
+<!--    <script src="{{asset('js/glitch.js') }}"></script>
+    <script>
+    (function ($) {
+		// On page load:
+   		$(document); // Fix jQuery nonsense
+		glitch(); // Start glitch script and clock
+		
+		// Override settings:
+		//distort_objects_one_at_a_time = true;
+	}(jQuery));
+    </script>-->
     <script src="{{asset('js/main.js') }}"></script>
     </body>
 </html>

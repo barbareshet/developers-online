@@ -1,0 +1,32 @@
+{
+  "name": "glitmage",
+  "main": "glitmage.js",
+  "homepage": "https://github.com/miguelmota/glitmage",
+  "authors": [
+    "Miguel Mota <miguelmota2@gmail.com>"
+  ],
+  "description": "Glitchify an image with canvas.",
+  "keywords": [
+    "glitch",
+    "image",
+    "canvas"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "_release": "e7bbafc3ce",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e7bbafc3ced9943f86f1030c66e6c5fa222daacd"
+  },
+  "_source": "https://github.com/miguelmota/glitmage.git",
+  "_target": "*",
+  "_originalSource": "glitmage",
+  "_direct": true
+}
